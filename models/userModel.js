@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 
 const productSchema = mongoose.Schema(
 	{
-		name: {
+		"data":
+		[name: {
 			type: String,
 			required: [true, "Please enter a product name"],
 		},
@@ -38,6 +39,7 @@ const productSchema = mongoose.Schema(
 	{
 		timestamps: true,
 	}
+		]
 );
 
 const Product = mongoose.model("Product", productSchema);
